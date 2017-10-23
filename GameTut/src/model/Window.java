@@ -1,13 +1,28 @@
-/* */
+/* 
+ * Wizard Game Tutorial
+ * Started 10/22/2017
+ */
 package model;
 
 import java.awt.Dimension;
 import javax.swing.JFrame;
 
-/** Creates the game window */
+/** 
+ * Creates the game window.
+ * 
+ * @author theNKetchum
+ * @version 10/22/2017
+ */
 public class Window {
 		
-	/** Constructor creates new window to display game object. */
+	/** 
+	 * Constructor creates new window to display game object.
+	 * 
+	 * @param theWidth the width of the window.
+	 * @param theHeight the height of the window.
+	 * @param theTitle the title of the game, displayed at the top of the window.
+	 * @param theGame the game object to create the window for. 
+	 */
 	public Window (int theWidth, int theHeight, String theTitle, Game theGame) {
 		
 		//Creates new JFrame object.

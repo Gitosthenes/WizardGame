@@ -1,4 +1,7 @@
-/*  */
+/* 
+ * Wizard Game Tutorial
+ * Started 10/22/2017
+ */
 package model;
 
 import java.awt.Canvas;
@@ -79,6 +82,7 @@ public class Game extends Canvas implements Runnable {
 		long timer = System.nanoTime();
 		
 		//Keeps track of FPS.
+		@SuppressWarnings("unused") //May be used later.
 		int frames = 0;
 		
 		//The main game loop.
@@ -114,7 +118,6 @@ public class Game extends Canvas implements Runnable {
 			
 			//Resets frame counter every second.
 			if (System.nanoTime() - timer > 1_000_000_000) {
-				System.out.println("FPS: " + frames);
 				//Reset timer to current time.
 				timer += 1_000_000_000;				
 				//Reset frame counter.
